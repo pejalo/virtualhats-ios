@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		698936DA8C664B71A70485DE /* Pods_Virtual_Hats_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 909DD397EA34238795E471EF /* Pods_Virtual_Hats_Tests.framework */; };
+		7379ECEF8ECBC4BE8D002767 /* Pods_Virtual_Hats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131CF4C266906A76B47AC9D7 /* Pods_Virtual_Hats.framework */; };
+		D0086E401F04DBB80063E432 /* AVCaptureSession+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0086E3D1F04DBB80063E432 /* AVCaptureSession+Helpers.swift */; };
+		D0086E411F04DBB80063E432 /* CGRect+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0086E3E1F04DBB80063E432 /* CGRect+Helpers.swift */; };
+		D0086E421F04DBB80063E432 /* UIView+FrameHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0086E3F1F04DBB80063E432 /* UIView+FrameHelpers.swift */; };
+		D0086E471F04DF8E0063E432 /* HatSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0086E441F04DF8E0063E432 /* HatSelector.xib */; };
+		D0086E481F04DF8E0063E432 /* HatSelectorContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0086E451F04DF8E0063E432 /* HatSelectorContainerView.swift */; };
+		D0086E491F04DF8E0063E432 /* HatSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0086E461F04DF8E0063E432 /* HatSelectorView.swift */; };
+		D05587F81EF3BED400ED2944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05587F71EF3BED400ED2944 /* AppDelegate.swift */; };
+		D05587FA1EF3BED500ED2944 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05587F91EF3BED500ED2944 /* ViewController.swift */; };
+		D05587FD1EF3BED500ED2944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05587FB1EF3BED500ED2944 /* Main.storyboard */; };
+		D05587FF1EF3BED500ED2944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05587FE1EF3BED500ED2944 /* Assets.xcassets */; };
+		D05588021EF3BED500ED2944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05588001EF3BED500ED2944 /* LaunchScreen.storyboard */; };
+		D055880D1EF3BED500ED2944 /* HurryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D055880C1EF3BED500ED2944 /* HurryTests.swift */; };
+		D05588181EF3BED500ED2944 /* HurryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05588171EF3BED500ED2944 /* HurryUITests.swift */; };
+		D07AD2931EF8F32E00AD6EDF /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07AD2921EF8F32E00AD6EDF /* CaptureViewController.swift */; };
+		D0F576571EF4608D0021CA14 /* FaceTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F576561EF4608D0021CA14 /* FaceTracker.swift */; };
+		F1B8CE700E9A773C6BDF36B2 /* Pods_Virtual_Hats_UI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094BA3574BDDDCA137ED3CE0 /* Pods_Virtual_Hats_UI_Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D05588091EF3BED500ED2944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D05587EC1EF3BED400ED2944 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D05587F31EF3BED400ED2944;
+			remoteInfo = Hurry;
+		};
+		D05588141EF3BED500ED2944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D05587EC1EF3BED400ED2944 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D05587F31EF3BED400ED2944;
+			remoteInfo = Hurry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		094BA3574BDDDCA137ED3CE0 /* Pods_Virtual_Hats_UI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Virtual_Hats_UI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		131CF4C266906A76B47AC9D7 /* Pods_Virtual_Hats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Virtual_Hats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E51A4411C5E1C65A03A30C /* Pods-Virtual Hats Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Hats Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Virtual Hats Tests/Pods-Virtual Hats Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A95C9CF26DFC6DF163893C4 /* Pods-Virtual Hats UI Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Hats UI Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Virtual Hats UI Tests/Pods-Virtual Hats UI Tests.release.xcconfig"; sourceTree = "<group>"; };
+		909DD397EA34238795E471EF /* Pods_Virtual_Hats_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Virtual_Hats_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1350AF9F06E2A18E8C3307 /* Pods-Virtual Hats Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Hats Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Virtual Hats Tests/Pods-Virtual Hats Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D0086E3D1F04DBB80063E432 /* AVCaptureSession+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AVCaptureSession+Helpers.swift"; path = "Categories/AVCaptureSession+Helpers.swift"; sourceTree = "<group>"; };
+		D0086E3E1F04DBB80063E432 /* CGRect+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGRect+Helpers.swift"; path = "Categories/CGRect+Helpers.swift"; sourceTree = "<group>"; };
+		D0086E3F1F04DBB80063E432 /* UIView+FrameHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+FrameHelpers.swift"; path = "Categories/UIView+FrameHelpers.swift"; sourceTree = "<group>"; };
+		D0086E441F04DF8E0063E432 /* HatSelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HatSelector.xib; sourceTree = "<group>"; };
+		D0086E451F04DF8E0063E432 /* HatSelectorContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatSelectorContainerView.swift; sourceTree = "<group>"; };
+		D0086E461F04DF8E0063E432 /* HatSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatSelectorView.swift; sourceTree = "<group>"; };
+		D05587F41EF3BED400ED2944 /* Virtual Hats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virtual Hats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D05587F71EF3BED400ED2944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D05587F91EF3BED500ED2944 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D05587FC1EF3BED500ED2944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D05587FE1EF3BED500ED2944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D05588011EF3BED500ED2944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D05588031EF3BED500ED2944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D05588081EF3BED500ED2944 /* Virtual Hats Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Virtual Hats Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D055880C1EF3BED500ED2944 /* HurryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurryTests.swift; sourceTree = "<group>"; };
+		D055880E1EF3BED500ED2944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D05588131EF3BED500ED2944 /* Virtual Hats UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Virtual Hats UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D05588171EF3BED500ED2944 /* HurryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurryUITests.swift; sourceTree = "<group>"; };
+		D05588191EF3BED500ED2944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D07AD2921EF8F32E00AD6EDF /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		D0F576561EF4608D0021CA14 /* FaceTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceTracker.swift; sourceTree = "<group>"; };
+		D767009ACF42921D21CBEF0C /* Pods-Virtual Hats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Hats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Virtual Hats/Pods-Virtual Hats.debug.xcconfig"; sourceTree = "<group>"; };
+		EB695992F7E5A8F58D45E93A /* Pods-Virtual Hats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Hats.release.xcconfig"; path = "Pods/Target Support Files/Pods-Virtual Hats/Pods-Virtual Hats.release.xcconfig"; sourceTree = "<group>"; };
+		F9AF016F6D982DDFE830CF29 /* Pods-Virtual Hats UI Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virtual Hats UI Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Virtual Hats UI Tests/Pods-Virtual Hats UI Tests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D05587F11EF3BED400ED2944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7379ECEF8ECBC4BE8D002767 /* Pods_Virtual_Hats.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05588051EF3BED500ED2944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				698936DA8C664B71A70485DE /* Pods_Virtual_Hats_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05588101EF3BED500ED2944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B8CE700E9A773C6BDF36B2 /* Pods_Virtual_Hats_UI_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A32ED7A3D66B3F8E0DD3DB63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				131CF4C266906A76B47AC9D7 /* Pods_Virtual_Hats.framework */,
+				909DD397EA34238795E471EF /* Pods_Virtual_Hats_Tests.framework */,
+				094BA3574BDDDCA137ED3CE0 /* Pods_Virtual_Hats_UI_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B865CF17E2A9D233B1417273 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D767009ACF42921D21CBEF0C /* Pods-Virtual Hats.debug.xcconfig */,
+				EB695992F7E5A8F58D45E93A /* Pods-Virtual Hats.release.xcconfig */,
+				36E51A4411C5E1C65A03A30C /* Pods-Virtual Hats Tests.debug.xcconfig */,
+				9C1350AF9F06E2A18E8C3307 /* Pods-Virtual Hats Tests.release.xcconfig */,
+				F9AF016F6D982DDFE830CF29 /* Pods-Virtual Hats UI Tests.debug.xcconfig */,
+				4A95C9CF26DFC6DF163893C4 /* Pods-Virtual Hats UI Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D0086E3C1F04DB560063E432 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D0086E3D1F04DBB80063E432 /* AVCaptureSession+Helpers.swift */,
+				D0086E3E1F04DBB80063E432 /* CGRect+Helpers.swift */,
+				D0086E3F1F04DBB80063E432 /* UIView+FrameHelpers.swift */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		D0086E431F04DF690063E432 /* Hat Selector */ = {
+			isa = PBXGroup;
+			children = (
+				D0086E441F04DF8E0063E432 /* HatSelector.xib */,
+				D0086E461F04DF8E0063E432 /* HatSelectorView.swift */,
+				D0086E451F04DF8E0063E432 /* HatSelectorContainerView.swift */,
+			);
+			path = "Hat Selector";
+			sourceTree = "<group>";
+		};
+		D05587EB1EF3BED400ED2944 = {
+			isa = PBXGroup;
+			children = (
+				D05587F61EF3BED400ED2944 /* Virtual Hats */,
+				D055880B1EF3BED500ED2944 /* Virtual Hats Tests */,
+				D05588161EF3BED500ED2944 /* Virtual Hats UI Tests */,
+				D05587F51EF3BED400ED2944 /* Products */,
+				B865CF17E2A9D233B1417273 /* Pods */,
+				A32ED7A3D66B3F8E0DD3DB63 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D05587F51EF3BED400ED2944 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D05587F41EF3BED400ED2944 /* Virtual Hats.app */,
+				D05588081EF3BED500ED2944 /* Virtual Hats Tests.xctest */,
+				D05588131EF3BED500ED2944 /* Virtual Hats UI Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D05587F61EF3BED400ED2944 /* Virtual Hats */ = {
+			isa = PBXGroup;
+			children = (
+				D05587F71EF3BED400ED2944 /* AppDelegate.swift */,
+				D05587F91EF3BED500ED2944 /* ViewController.swift */,
+				D0F576561EF4608D0021CA14 /* FaceTracker.swift */,
+				D07AD2921EF8F32E00AD6EDF /* CaptureViewController.swift */,
+				D0086E431F04DF690063E432 /* Hat Selector */,
+				D0086E3C1F04DB560063E432 /* Categories */,
+				D05587FB1EF3BED500ED2944 /* Main.storyboard */,
+				D05587FE1EF3BED500ED2944 /* Assets.xcassets */,
+				D05588001EF3BED500ED2944 /* LaunchScreen.storyboard */,
+				D05588031EF3BED500ED2944 /* Info.plist */,
+			);
+			path = "Virtual Hats";
+			sourceTree = "<group>";
+		};
+		D055880B1EF3BED500ED2944 /* Virtual Hats Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D055880C1EF3BED500ED2944 /* HurryTests.swift */,
+				D055880E1EF3BED500ED2944 /* Info.plist */,
+			);
+			path = "Virtual Hats Tests";
+			sourceTree = "<group>";
+		};
+		D05588161EF3BED500ED2944 /* Virtual Hats UI Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D05588171EF3BED500ED2944 /* HurryUITests.swift */,
+				D05588191EF3BED500ED2944 /* Info.plist */,
+			);
+			path = "Virtual Hats UI Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D05587F31EF3BED400ED2944 /* Virtual Hats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D055881C1EF3BED500ED2944 /* Build configuration list for PBXNativeTarget "Virtual Hats" */;
+			buildPhases = (
+				AF526B4FD42D6E70150E1BE5 /* [CP] Check Pods Manifest.lock */,
+				D05587F01EF3BED400ED2944 /* Sources */,
+				D05587F11EF3BED400ED2944 /* Frameworks */,
+				D05587F21EF3BED400ED2944 /* Resources */,
+				B04C2B9C27096C7DC6F8074B /* [CP] Embed Pods Frameworks */,
+				56949DB6AD1BC685DB147611 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Virtual Hats";
+			productName = Hurry;
+			productReference = D05587F41EF3BED400ED2944 /* Virtual Hats.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D05588071EF3BED500ED2944 /* Virtual Hats Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D055881F1EF3BED500ED2944 /* Build configuration list for PBXNativeTarget "Virtual Hats Tests" */;
+			buildPhases = (
+				3D56C968DDBC263323262CFD /* [CP] Check Pods Manifest.lock */,
+				D05588041EF3BED500ED2944 /* Sources */,
+				D05588051EF3BED500ED2944 /* Frameworks */,
+				D05588061EF3BED500ED2944 /* Resources */,
+				51A456840AF43D41FA772671 /* [CP] Embed Pods Frameworks */,
+				1A52C6856F9A7579650D5E3B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D055880A1EF3BED500ED2944 /* PBXTargetDependency */,
+			);
+			name = "Virtual Hats Tests";
+			productName = HurryTests;
+			productReference = D05588081EF3BED500ED2944 /* Virtual Hats Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D05588121EF3BED500ED2944 /* Virtual Hats UI Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D05588221EF3BED500ED2944 /* Build configuration list for PBXNativeTarget "Virtual Hats UI Tests" */;
+			buildPhases = (
+				25692A087667043F81B617F5 /* [CP] Check Pods Manifest.lock */,
+				D055880F1EF3BED500ED2944 /* Sources */,
+				D05588101EF3BED500ED2944 /* Frameworks */,
+				D05588111EF3BED500ED2944 /* Resources */,
+				F068D98276A443881399491C /* [CP] Embed Pods Frameworks */,
+				CDF4B93AE83970415E2CE7CE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D05588151EF3BED500ED2944 /* PBXTargetDependency */,
+			);
+			name = "Virtual Hats UI Tests";
+			productName = HurryUITests;
+			productReference = D05588131EF3BED500ED2944 /* Virtual Hats UI Tests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D05587EC1EF3BED400ED2944 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Peter LoBue";
+				TargetAttributes = {
+					D05587F31EF3BED400ED2944 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					D05588071EF3BED500ED2944 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6JRKTQWF5Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D05587F31EF3BED400ED2944;
+					};
+					D05588121EF3BED500ED2944 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6JRKTQWF5Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D05587F31EF3BED400ED2944;
+					};
+				};
+			};
+			buildConfigurationList = D05587EF1EF3BED400ED2944 /* Build configuration list for PBXProject "Virtual Hats" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D05587EB1EF3BED400ED2944;
+			productRefGroup = D05587F51EF3BED400ED2944 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D05587F31EF3BED400ED2944 /* Virtual Hats */,
+				D05588071EF3BED500ED2944 /* Virtual Hats Tests */,
+				D05588121EF3BED500ED2944 /* Virtual Hats UI Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D05587F21EF3BED400ED2944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0086E471F04DF8E0063E432 /* HatSelector.xib in Resources */,
+				D05588021EF3BED500ED2944 /* LaunchScreen.storyboard in Resources */,
+				D05587FF1EF3BED500ED2944 /* Assets.xcassets in Resources */,
+				D05587FD1EF3BED500ED2944 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05588061EF3BED500ED2944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05588111EF3BED500ED2944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A52C6856F9A7579650D5E3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Virtual Hats Tests/Pods-Virtual Hats Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25692A087667043F81B617F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3D56C968DDBC263323262CFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		51A456840AF43D41FA772671 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Virtual Hats Tests/Pods-Virtual Hats Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56949DB6AD1BC685DB147611 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Virtual Hats/Pods-Virtual Hats-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF526B4FD42D6E70150E1BE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B04C2B9C27096C7DC6F8074B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Virtual Hats/Pods-Virtual Hats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDF4B93AE83970415E2CE7CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Virtual Hats UI Tests/Pods-Virtual Hats UI Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F068D98276A443881399491C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Virtual Hats UI Tests/Pods-Virtual Hats UI Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D05587F01EF3BED400ED2944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05587FA1EF3BED500ED2944 /* ViewController.swift in Sources */,
+				D07AD2931EF8F32E00AD6EDF /* CaptureViewController.swift in Sources */,
+				D05587F81EF3BED400ED2944 /* AppDelegate.swift in Sources */,
+				D0086E421F04DBB80063E432 /* UIView+FrameHelpers.swift in Sources */,
+				D0086E401F04DBB80063E432 /* AVCaptureSession+Helpers.swift in Sources */,
+				D0086E491F04DF8E0063E432 /* HatSelectorView.swift in Sources */,
+				D0086E411F04DBB80063E432 /* CGRect+Helpers.swift in Sources */,
+				D0F576571EF4608D0021CA14 /* FaceTracker.swift in Sources */,
+				D0086E481F04DF8E0063E432 /* HatSelectorContainerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05588041EF3BED500ED2944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D055880D1EF3BED500ED2944 /* HurryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D055880F1EF3BED500ED2944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05588181EF3BED500ED2944 /* HurryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D055880A1EF3BED500ED2944 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D05587F31EF3BED400ED2944 /* Virtual Hats */;
+			targetProxy = D05588091EF3BED500ED2944 /* PBXContainerItemProxy */;
+		};
+		D05588151EF3BED500ED2944 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D05587F31EF3BED400ED2944 /* Virtual Hats */;
+			targetProxy = D05588141EF3BED500ED2944 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D05587FB1EF3BED500ED2944 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D05587FC1EF3BED500ED2944 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D05588001EF3BED500ED2944 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D05588011EF3BED500ED2944 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D055881A1EF3BED500ED2944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D055881B1EF3BED500ED2944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D055881D1EF3BED500ED2944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D767009ACF42921D21CBEF0C /* Pods-Virtual Hats.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Virtual Hats/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.pejalo.Hurry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D055881E1EF3BED500ED2944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB695992F7E5A8F58D45E93A /* Pods-Virtual Hats.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Virtual Hats/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.pejalo.Hurry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D05588201EF3BED500ED2944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36E51A4411C5E1C65A03A30C /* Pods-Virtual Hats Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6JRKTQWF5Y;
+				INFOPLIST_FILE = HurryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.pejalo.HurryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hurry.app/Hurry";
+			};
+			name = Debug;
+		};
+		D05588211EF3BED500ED2944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C1350AF9F06E2A18E8C3307 /* Pods-Virtual Hats Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6JRKTQWF5Y;
+				INFOPLIST_FILE = HurryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.pejalo.HurryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hurry.app/Hurry";
+			};
+			name = Release;
+		};
+		D05588231EF3BED500ED2944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9AF016F6D982DDFE830CF29 /* Pods-Virtual Hats UI Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 6JRKTQWF5Y;
+				INFOPLIST_FILE = HurryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.pejalo.HurryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Hurry;
+			};
+			name = Debug;
+		};
+		D05588241EF3BED500ED2944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A95C9CF26DFC6DF163893C4 /* Pods-Virtual Hats UI Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 6JRKTQWF5Y;
+				INFOPLIST_FILE = HurryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.pejalo.HurryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Hurry;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D05587EF1EF3BED400ED2944 /* Build configuration list for PBXProject "Virtual Hats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D055881A1EF3BED500ED2944 /* Debug */,
+				D055881B1EF3BED500ED2944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D055881C1EF3BED500ED2944 /* Build configuration list for PBXNativeTarget "Virtual Hats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D055881D1EF3BED500ED2944 /* Debug */,
+				D055881E1EF3BED500ED2944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D055881F1EF3BED500ED2944 /* Build configuration list for PBXNativeTarget "Virtual Hats Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05588201EF3BED500ED2944 /* Debug */,
+				D05588211EF3BED500ED2944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D05588221EF3BED500ED2944 /* Build configuration list for PBXNativeTarget "Virtual Hats UI Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05588231EF3BED500ED2944 /* Debug */,
+				D05588241EF3BED500ED2944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D05587EC1EF3BED400ED2944 /* Project object */;
+}

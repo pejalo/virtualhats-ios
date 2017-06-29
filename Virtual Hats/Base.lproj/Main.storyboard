@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hurry" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcm-WZ-Yew">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPy-f7-D7A">
+                                        <rect key="frame" x="127" y="10" width="120" height="30"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                        <state key="normal" title="START WORKING">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="userTappedToWork:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FMq-bd-zUQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="HPy-f7-D7A" firstAttribute="centerX" secondItem="zcm-WZ-Yew" secondAttribute="centerX" id="1RB-K7-uu7"/>
+                                    <constraint firstItem="HPy-f7-D7A" firstAttribute="centerY" secondItem="zcm-WZ-Yew" secondAttribute="centerY" id="VmM-kq-Y6d"/>
+                                    <constraint firstAttribute="height" constant="50" id="jmZ-fR-APg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="KAD-FN-E3L" customClass="HatSelectorContainerView" customModule="Hurry" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="128"/>
+                            </view>
+                            <webView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3S-e8-oGH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="2ef-EX-vBT">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txn-Xq-BEG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's see how good you look in a hat" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12c-nC-VHq">
+                                        <rect key="frame" x="49" y="303.5" width="276.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xio-Eb-dne">
+                                        <rect key="frame" x="106" y="359" width="162" height="30"/>
+                                        <state key="normal" title="Allow access to camera"/>
+                                        <connections>
+                                            <action selector="userTappedToAllowAccess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rIA-Jj-cAl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="12c-nC-VHq" firstAttribute="centerX" secondItem="txn-Xq-BEG" secondAttribute="centerX" id="4wp-Qm-dwh"/>
+                                    <constraint firstItem="12c-nC-VHq" firstAttribute="centerY" secondItem="txn-Xq-BEG" secondAttribute="centerY" constant="-20" id="Epo-iG-slj"/>
+                                    <constraint firstItem="xio-Eb-dne" firstAttribute="centerX" secondItem="txn-Xq-BEG" secondAttribute="centerX" id="WFJ-5z-P97"/>
+                                    <constraint firstItem="xio-Eb-dne" firstAttribute="top" secondItem="12c-nC-VHq" secondAttribute="bottom" constant="35" id="x19-J4-KML"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="txn-Xq-BEG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3KV-jH-ZEe"/>
+                            <constraint firstAttribute="trailing" secondItem="KAD-FN-E3L" secondAttribute="trailing" id="5BU-iM-SGi"/>
+                            <constraint firstAttribute="trailing" secondItem="l3S-e8-oGH" secondAttribute="trailing" id="5T7-Se-FuI"/>
+                            <constraint firstAttribute="trailing" secondItem="txn-Xq-BEG" secondAttribute="trailing" id="8or-0V-Xnb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zcm-WZ-Yew" secondAttribute="bottom" id="DAl-sT-yNY"/>
+                            <constraint firstAttribute="trailing" secondItem="zcm-WZ-Yew" secondAttribute="trailing" id="I4Y-nn-Qkd"/>
+                            <constraint firstItem="KAD-FN-E3L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jlp-gF-a3D"/>
+                            <constraint firstItem="KAD-FN-E3L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KVh-CW-Jmj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="txn-Xq-BEG" secondAttribute="bottom" id="XYY-Qn-fln"/>
+                            <constraint firstItem="txn-Xq-BEG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bwA-zW-vMm"/>
+                            <constraint firstItem="l3S-e8-oGH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gA7-N6-b1e"/>
+                            <constraint firstItem="2ef-EX-vBT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gNP-4y-tbR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="l3S-e8-oGH" secondAttribute="bottom" id="hOh-Ws-bBI"/>
+                            <constraint firstItem="2ef-EX-vBT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jb7-9t-73N"/>
+                            <constraint firstItem="l3S-e8-oGH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o4O-gx-rs9"/>
+                            <constraint firstItem="zcm-WZ-Yew" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y8d-W9-pxy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityView" destination="2ef-EX-vBT" id="39A-eO-XMv"/>
+                        <outlet property="allowAccessView" destination="txn-Xq-BEG" id="Q8H-8r-EJC"/>
+                        <outlet property="hatSelectorView" destination="KAD-FN-E3L" id="JpV-sU-DYe"/>
+                        <outlet property="webView" destination="l3S-e8-oGH" id="T2m-Ii-oD7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+</document>
