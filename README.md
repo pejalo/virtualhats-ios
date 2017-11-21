@@ -25,3 +25,7 @@ For future reference, these articles may help when replacing Google's Mobile Vis
 - https://www.codeproject.com/Articles/1097378/In-Your-Face-Figuring-Out-Apple-s-Face-Detection-A
 - https://stackoverflow.com/questions/34383917/face-detection-with-avfoundation-swift-2
 - http://www.icapps.com/face-detection-with-core-image-on-live-video/#comment-4587
+
+## Screenshots
+
+<img src="screenshot.png" width="200" title="Virtual Hats screenshot">
